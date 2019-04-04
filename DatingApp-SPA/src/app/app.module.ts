@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { ErrorInterceptorProvider } from './_services/error.interceptor';
 import { AlertifyService } from './_services/alertify.service';
+import { BootstrapModule } from './bootstrap.module';
 
 @NgModule({
    declarations: [
@@ -21,7 +22,8 @@ import { AlertifyService } from './_services/alertify.service';
    imports: [
       BrowserModule,
       HttpClientModule,
-      FormsModule
+      FormsModule,
+      BootstrapModule
    ],
    providers: [
       AuthService,
