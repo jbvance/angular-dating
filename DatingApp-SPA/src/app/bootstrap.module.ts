@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
-import { BsDropdownModule } from 'ngx-bootstrap';
+import { BsDropdownModule, TabsModule } from 'ngx-bootstrap';
 
 @NgModule({
     imports: [
-        BsDropdownModule.forRoot()
+        BsDropdownModule.forRoot(),
+        TabsModule.forRoot()
     ],
     exports:[
-        BsDropdownModule
+        BsDropdownModule,
+        TabsModule
     ]
 })
 
